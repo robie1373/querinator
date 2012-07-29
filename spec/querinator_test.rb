@@ -1,0 +1,1 @@
+querinator_spec.rb

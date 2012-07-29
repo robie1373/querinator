@@ -1,17 +1,17 @@
 require_relative "spec_helper"
 
 module Querinator
-  describe Qory do
+  describe Query do
     it "creates an instance of query" do
-      Qory.new.must_be_instance_of Qory
+      Query.new.must_be_instance_of Query
     end
 
     it "must ask me a question" do
-      Qory.new.must_respond_to :pose
+      Query.new.must_respond_to :pose
     end
 
-    it "must fail" do
-      (10).must_equal 11
+    it "must not fail" do
+      (10).must_equal 10
     end
 
   end
