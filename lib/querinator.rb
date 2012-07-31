@@ -6,3 +6,4 @@ module Querinator
     end
   end
 end
+
