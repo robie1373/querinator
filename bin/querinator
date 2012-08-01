@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+
+require "querinator"
+
+def runit
+  the_question = Querinator::Query.new(:question => "Is this fun?", :answer => "yes")
+  puts the_question.pose
+
+  input = gets()
+  input = input.chomp
+
+  if  the_question.is_correct?(input)
+    puts "Hooray!!"
+  else
+    puts "oooooh."
+    puts "The correct answer was #{the_question.answer}"
+  end
+end
+
+runit
