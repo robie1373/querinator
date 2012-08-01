@@ -1,9 +1,10 @@
 # Querinator
 
-TODO: Write a gem description
+Querinator querinates you. What? Querinates? That's perfectly cromulent.
+In any case it will ingest structured text, style(s) TBD, and quiz the user.
 
 ## Installation
-
+TODO:
 Add this line to your application's Gemfile:
 
     gem 'querinator'
@@ -18,7 +19,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+As of today, if you run bin/querinator it will ask you a meaningful question. That's it.
 
 ## Contributing
 
