@@ -16,9 +16,9 @@ Gem::Specification.new do |gem|
   gem.version       = Querinator::VERSION
 
   gem.add_development_dependency 'rb-fsevent', '~>0.9.1'
-  gem.add_development_dependency 'minitest-reporters', '0.9.0'
-  gem.add_development_dependency 'guard'
-  gem.add_development_dependency 'guard-minitest'
-  gem.add_development_dependency 'growl'
-  gem.add_development_dependency 'turn'
+  gem.add_development_dependency 'minitest-reporters', '~>0.9.0'
+  gem.add_development_dependency 'guard', '~>1.2.3'
+  gem.add_development_dependency 'guard-minitest', '~>0.5.0'
+  gem.add_development_dependency 'growl', '~>1.0.3'
+  gem.add_development_dependency 'turn', '~>0.9.6'
 end

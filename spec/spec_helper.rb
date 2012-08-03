@@ -6,9 +6,8 @@ require 'growl'
 require_relative '../lib/querinator'
 require_relative 'querinator/importer_spec'
 require_relative 'querinator/query_spec'
+MiniTest::Reporters.use!
 
 module Querinator
-
-MiniTest::Reporters.use!
 
 end

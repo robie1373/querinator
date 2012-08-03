@@ -4,7 +4,7 @@ Querinator querinates you. What? Querinates? That's perfectly cromulent.
 In any case it will ingest structured text, style(s) TBD, and quiz the user.
 
 ## Installation
-TODO:
+
 Add this line to your application's Gemfile:
 
     gem 'querinator'
