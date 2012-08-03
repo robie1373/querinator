@@ -1,36 +1,17 @@
+require 'json'
 require "querinator/version"
+require 'querinator/importer'
+require 'querinator/query'
 
 module Querinator
-  class Query
-    def initialize (args)
-      @question = args[:question]
-      @answer   = args[:answer]
+  class Game
 
-    end
-
-    def pose
-      @question
-    end
-
-    def is_correct?(response)
-      if response == @answer
-        TRUE
-      else
-        FALSE
-      end
-    end
-
-    def answer
-      @answer
+    def get_questions
+      file_name = "./spec/test_question_file.txt"
+      Importer.new.parse(file_name)
     end
   end
 
-  class Importer
-    def import
-
-    end
-
-  end
 
 end
 

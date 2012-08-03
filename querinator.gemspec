@@ -4,9 +4,9 @@ require File.expand_path('../lib/querinator/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Robie Lutsey"]
   gem.email         = ["robie1373@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.description   = %q{manages and presents flash card data}
+  gem.summary       = %q{Will import JSON hashes of questions and asnwers, track times seen and times correct for each question.}
+  gem.homepage      = "http://robie1373.github.com/querinator"
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
