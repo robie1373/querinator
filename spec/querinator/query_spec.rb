@@ -1,3 +1,4 @@
+require_relative '../spec_helper'
 module Querinator
   describe Query do
     def setup
