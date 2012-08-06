@@ -1,20 +1,22 @@
-#!/usr/bin/env ruby
+#! /usr/bin/env ruby
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 
 require "querinator"
 
+@path = "./spec/test_question_file.txt"
 def runit
-  the_question = Querinator::Query.new(:question => "Is this fun?", :answer => "yes")
-  puts the_question.pose
+  questions = Querinator::Importer.new.parse(@path)
+  random_question = questions.sample
+  puts random_question.pose
 
   input = gets()
   input = input.chomp
 
-  if  the_question.is_correct?(input)
+  if  random_question.is_correct?(input)
     puts "Hooray!!"
   else
     puts "oooooh."
-    puts "The correct answer was #{the_question.answer}"
+    puts "The correct answer was '#{random_question.answer}'"
   end
 end
 
