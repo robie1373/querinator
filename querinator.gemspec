@@ -21,4 +21,5 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'guard-minitest', '~>0.5.0'
   gem.add_development_dependency 'growl', '~>1.0.3'
   gem.add_development_dependency 'turn', '~>0.9.6'
+  gem.add_development_dependency 'rake', '~>0.9.2'
 end
