@@ -1,3 +1,4 @@
+<a href="https://codeclimate.com/github/robie1373/querinator"><img src="https://codeclimate.com/badge.png" /></a>
 # Querinator
 
 Querinator querinates you. What? Querinates? That's perfectly cromulent.

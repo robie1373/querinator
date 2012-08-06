@@ -12,11 +12,7 @@ module Querinator
      end
 
      def is_correct?(response)
-       if response == @answer
-         TRUE
-       else
-         FALSE
-       end
+       response == @answer ? TRUE : FALSE
      end
 
      def answer

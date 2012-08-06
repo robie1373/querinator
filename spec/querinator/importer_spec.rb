@@ -6,11 +6,11 @@ module Querinator
        @file_name     = "./spec/test_question_file.txt"
      end
 
-     describe "#import" do
-       it "must try to import qna data" do
-         Importer.new.must_respond_to :import
-       end
-     end
+#     describe "#import" do
+#       it "must try to import qna data" do
+#        Importer.new.must_respond_to :import
+#      end
+#    end
 
      #describe "read data from file" do
      #it "must read data in from a file" do
